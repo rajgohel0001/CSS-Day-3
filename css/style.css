@@ -1,0 +1,102 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/*li {
+  float: left;
+}
+li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}*/
+/*li a:hover:not(.active) {
+  background-color: #E3FF33;
+}*/
+.header_top{
+  background-color: lightblue;
+}
+.header_bottom{
+  background-color: lightgreen;
+  padding: 10px 10px;
+}
+.cont{
+  padding: 20px 20px;
+  color: black;
+}
+.tab-content .tab-pane{
+  max-width: 600px;
+  height: 400px;
+  overflow: hidden;
+}
+.tab-content{
+  padding: 10px 0;
+}
+/*.my-container-1{
+  background-image: url('../images/im5.gif');
+  margin-left: auto!important;
+  margin-right: auto!important;
+  transition: background-position 1.5s ease-out 0.5s;
+  background-position: top center;
+  background-size: 100% auto!important;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.my-container-2{
+  background-image: url('../images/im4.jpg');
+  margin-left: auto!important;
+  margin-right: auto!important;
+  transition: background-position 1.5s ease-out 0.5s;
+  background-position: top center;
+  background-size: 100% auto!important;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.my-container-3{
+  background-image: url('../images/im3.jpg');
+  margin-left: auto!important;
+  margin-right: auto!important;
+  transition: background-position 1.5s ease-out 0.5s;
+  background-position: top center;
+  background-size: 100% auto!important;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.my-container-1:hover {
+  background-position: bottom center!important;
+  transition: background-position 5s linear 0s;
+}
+.my-container-2:hover {
+  background-position: bottom center!important;
+  transition: background-position 5s linear 0s;
+}
+.my-container-3:hover {
+  background-position: bottom center!important;
+  transition: background-position 5s linear 0s;
+}*/
+.service-dropdown, .solution-dropdown{
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content, .solution-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+.service-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.success-alert, .error-alert{
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}

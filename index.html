@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Index Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script> -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<header>
+		<div style="padding: 5px 15px; display: table;width: 100%;">
+			<div style="float: left;">
+				<a title="Facebook"><i class="fab fa-facebook-f"></i></a>
+				<a title="instagram"><i class="fab fa-instagram"></i></a>
+				<a title="twitter"><i class="fab fa-twitter"></i></a>
+			</div>
+			<div style="float: right;">
+				<a href="emailto:abc@gm.com"><i class="fas fa-envelope-square"></i>abc@gm.com</a>
+				<a href="tel:9999988888"><i class="fas fa-phone"></i>9999988888</a>
+			</div>
+		</div>
+		<div class="header_bottom">
+			<img src="./images/i1.png" alt="logo" style="width:60px;">
+			<div style="float: right;">
+				<a style="padding: 0 10px;">Home</a>
+				<div class="solution-dropdown" onclick="dropw()">
+					<a style="padding: 0 10px;">Solution<i class="fas fa-caret-down"></i></a>
+					<div class="solution-dropdown-content">
+						<ul>
+							<li>Solution-1</li>
+							<li>Solution-2</li>
+							<li>Solution-3</li>
+						</ul>
+					</div>
+				</div>
+				<div class="service-dropdown">
+					<a style="padding: 0 10px;">Services<i class="fas fa-caret-down"></i></a>
+					<div class="dropdown-content">
+						<ul>
+							<li>Services-1</li>
+							<li>Services-2</li>
+							<li>Services-3</li>
+						</ul>
+					</div>
+				</div>
+				<input type="text" name="txt" placeholder="search" id="search"><button onclick="check()"><i class="fas fa-search"></i></button>
+			</div>
+		</div>
+	</header>
+	<div class="cont">
+		<!-- Nav tabs -->
+		<ul class="nav nav-tabs" role="tablist">
+			<li class="nav-item">
+				<a class="nav-link active" data-toggle="tab" href="#tab-1">Tab-1</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" data-toggle="tab" href="#tab-2">Tab-2</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" data-toggle="tab" href="#tab-3">Tab-3</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link disabled" data-toggle="tab" href="#">Tab-4</a>
+			</li>
+		</ul>
+		<!-- Tab panes -->
+		<div class="tab-content">
+			<div id="tab-1" class="container tab-pane active my-container-1">
+				<img src="./images/im5.gif">
+			</div>
+			<div id="tab-2" class="container tab-pane fade my-container-2">
+				<img src="./images/im4.jpg">
+			</div>
+			<div id="tab-3" class="container tab-pane fade my-container-3">
+				<img src="./images/im3.jpg">
+			</div>
+		</div>
+		<div class="success-alert">
+		<div class="alert alert-success alert-dismissible">
+			<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+			<strong>Success!</strong> Indicates a successful or positive action.
+		</div>
+		</div>
+		<div class="error-alert">
+		<div class="alert alert-danger alert-dismissible">
+			<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+			<strong>Error!</strong> Indicates a successful or positive action.
+		</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function dropw(){
+			$('.solution-dropdown-content').toggle();
+		}
+		function check(){
+			var input_val = document.getElementById('search').value;
+			console.log(input_val.length);
+			if (input_val.length>0) {
+				$('.success-alert').toggle();
+			}
+			else{
+				$('.error-alert').toggle();
+			}
+		}
+		$(document).ready()
+	</script>
+</body>
+</html>
